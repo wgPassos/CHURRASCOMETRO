@@ -32,7 +32,7 @@ function calcularChurras( ) {
     let criancasBebida = parseInt(criancas.value);
 
     document.getElementById("resultadoGeral").innerHTML = "<h4>" + calcCarne(totalCarne) + " Kg de carne</h4>";
-    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcCerveja(adultosBebida) / 355) + " Latas de cerveja</h4>";
+    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcCerveja(adultosBebida) / .355) + " Latas de cerveja</h4>";
     document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<h4>";
 }
 
