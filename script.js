@@ -31,9 +31,9 @@ function calcularChurras( ) {
     let adultosBebida = parseInt(adultos.value);
     let criancasBebida = parseInt(criancas.value);
 
-    document.getElementById("resultadoCarne").innerHTML += calcCarne(totalCarne) + " Kg";
-    document.getElementById("resultadoCerveja").innerHTML += calcCerveja(adultosBebida) + " Litros";
-    document.getElementById("resultadoRefri").innerHTML += calcRefri(criancasBebida) + " Litros";
+    document.getElementById("resultadoGeral").innerHTML = "<h4>" + calcCarne(totalCarne) + " Kg de carne</h4>";
+    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcCerveja(adultosBebida) / 355) + " Latas de cerveja</h4>";
+    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<h4>";
 }
 
 function calcCarne(e) {
