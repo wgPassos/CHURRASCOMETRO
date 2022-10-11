@@ -1,4 +1,4 @@
 ### CHURRASCOMÊTRPO 
 
 
-Em construção :construction:# Churrascom-tro
+Em construção :construction:# Churrascomêtro
