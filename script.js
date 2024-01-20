@@ -26,14 +26,17 @@ function verifica () {
 }
 
 function calcularChurras( ) {
-    // console.log(adultos.value);
+    console.log(adultos.value);
+    console.log(criancas.value);
+    console.log(horas.value);
+    console.log(`teste`)
     let totalCarne = parseInt(adultos.value) + (parseFloat(criancas.value) * 0.5)
     let adultosBebida = parseInt(adultos.value);
     let criancasBebida = parseInt(criancas.value);
 
-    document.getElementById("resultadoGeral").innerHTML = "<h4>" + calcCarne(totalCarne) + " Kg de carne</h4>";
-    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcCerveja(adultosBebida) / .355) + " Latas de cerveja</h4>";
-    document.getElementById("resultadoGeral").innerHTML += "<h4>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<h4>";
+    document.getElementById("resultadoCarne").innerHTML += "<i>" + calcCarne(totalCarne) + " Kg</i>";
+    document.getElementById("resultadoCerveja").innerHTML += "<i>" + Math.ceil(calcCerveja(adultosBebida) / .355) + " Latas de cerveja</i>";
+    document.getElementById("resultadoRefri").innerHTML += "<i>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<i>";
 }
 
 function calcCarne(e) {
@@ -44,7 +47,8 @@ function calcCarne(e) {
         // console.log(horasChurras)
     }
     // console.log("" + typeof(e))
-    let totalCarne = e * kgCarne;
+    let totalCarneE = e * kgCarne;
+    let totalCarne = totalCarneE.toFixed(2);
     // console.log(kgCarne);
 
     // console.log(totalCarne);

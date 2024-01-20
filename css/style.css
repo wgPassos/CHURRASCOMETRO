@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
