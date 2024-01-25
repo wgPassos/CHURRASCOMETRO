@@ -8,3 +8,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+.label {
+    display: flex;
+    flex-direction: column;
+}
