@@ -12,6 +12,7 @@ let carne = document.getElementById("carne");
 let cerveja = document.getElementById("cerveja");
 let refri = document.getElementById("refri");
 let btnCalc = document.getElementById("calcular");
+let btnReset = document.getElementById("reset");
 
 
 btnCalc.addEventListener("click", verifica);
@@ -76,3 +77,18 @@ function calcRefri(e) {
     let totalRefri = e * mlRefri;
     return totalRefri;
 }
+
+btnReset.addEventListener("click", reseteD);
+
+function reseteD() {
+    console.log(`oii`)
+    document.getElementById("resultadoCarne").innerHTML = "Carne: ";
+    document.getElementById("resultadoCerveja").innerHTML = "Ceveja: "
+    document.getElementById("resultadoRefri").innerHTML = "Refrigerante: "
+
+    adultos.value = "";
+    criancas.value = "";
+    horas.value = "";
+}
+
+
