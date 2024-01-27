@@ -27,6 +27,7 @@ function verifica () {
 }
 
 function calcularChurras( ) {
+    btnCalc.removeAttribute("disabled");
     console.log(adultos.value);
     console.log(criancas.value);
     console.log(horas.value);
