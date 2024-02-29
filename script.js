@@ -1,7 +1,8 @@
 
-// cARNE - 400 gr por pessoa + de 6horas - 650 
+// Carne - 400 gr por pessoa + de 6horas - 650 
 // Cerveja - 1200 ml por pessoa + de 6horas - 2000 ml
 // Refrigerante / água 1000 ml por pessoa +6horas -1500 ml
+// btnCalc.disabled = true;
 
 // crianças valem por 0,5 
 
@@ -14,32 +15,61 @@ let refri = document.getElementById("refri");
 let btnCalc = document.getElementById("calcular");
 let btnReset = document.getElementById("reset");
 
+// btnCalc.disabled = true;
 
-btnCalc.addEventListener("click", verifica);
+// btnCalc.addEventListener("click", verifica);
 
-function verifica () {
-    if (adultos.value === "" || criancas.value === "" || horas.value === "") {
-        alert("Por favor, preencha todos os campos. ")
-    } 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('adultos').addEventListener('input', verificaCampos);
+    document.getElementById('criancas').addEventListener('input', verificaCampos);
+    document.getElementById('horas').addEventListener('input', verificaCampos);
+  });
+
+function verificaCampos() {
+    // Codigo que será executado
+    if (adultos.value !== "" && criancas.value !== "" && horas.value !== "") {
+        console.log(adultos.value +"tesssss");   
+        console.log(`teste1`);   
+        btnCalc.disabled = false;
+        // setTimeout(() => {
+            
+            //     alert("Por favor, preencha todos os campos. ")
+            // }, 2500);
+        } 
     else {
-        calcularChurras();
+            // disabledButton();
+        btnCalc.disabled = true;
+        console.log(btnCalc)
+
+            // calcularChurras();
+        }
     }
-}
+    
+    function disabledButton (){
+        console.log(`teste`)
+        // btnCalc.disabled = true;
+    }
 
-function calcularChurras( ) {
-    btnCalc.removeAttribute("disabled");
-    console.log(adultos.value);
-    console.log(criancas.value);
-    console.log(horas.value);
-    console.log(`teste`)
-    let totalCarne = parseInt(adultos.value) + (parseFloat(criancas.value) * 0.5)
-    let adultosBebida = parseInt(adultos.value);
-    let criancasBebida = parseInt(criancas.value);
+    btnCalc.addEventListener("click", calcularChurras)
+    
+    function calcularChurras( ) {
+        reseteD();
+        // reseteD();
+        console.log(`teste03`);   
+        console.log(adultos.value);
+        console.log(criancas.value);
+        console.log(horas.value);
+        console.log(`teste`)
+        let totalCarne = parseInt(adultos.value) + (parseFloat(criancas.value) * 0.5)
+        let adultosBebida = parseInt(adultos.value);
+        let criancasBebida = parseInt(criancas.value);
 
-    document.getElementById("resultadoCarne").innerHTML += "<em>" + calcCarne(totalCarne) + " Kg</em>";
-    document.getElementById("resultadoCerveja").innerHTML += "<em>" + Math.ceil(calcCerveja(adultosBebida) / .355) + " Latas de cerveja</em>";
-    document.getElementById("resultadoRefri").innerHTML += "<em>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<em>";
-}
+        document.getElementById("resultadoCarne").innerHTML += "<em>" + calcCarne(totalCarne) + " Kg</em>";
+        document.getElementById("resultadoCerveja").innerHTML += "<em>" + Math.ceil(calcCerveja(adultosBebida) / .355) + " Latas de cerveja</em>";
+        document.getElementById("resultadoRefri").innerHTML += "<em>" + Math.ceil(calcRefri(criancasBebida) / 2) + " Garrafas(s) de refrigerante / água<em>";
+
+        reseteInputs();
+    }
 
 function calcCarne(e) {
     let kgCarne = 0.400;
@@ -87,9 +117,12 @@ function reseteD() {
     document.getElementById("resultadoCerveja").innerHTML = "Ceveja: "
     document.getElementById("resultadoRefri").innerHTML = "Refrigerante: "
 
+}
+
+function reseteInputs() {
     adultos.value = "";
     criancas.value = "";
     horas.value = "";
-}
 
+}
 

@@ -12,3 +12,9 @@ a:-webkit-any-link {
     display: flex;
     flex-direction: column;
 }
+
+#calcular::disabled {
+    opacity: .4;
+    cursor: default;
+    
+}
