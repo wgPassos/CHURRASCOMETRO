@@ -15,51 +15,31 @@ let refri = document.getElementById("refri");
 let btnCalc = document.getElementById("calcular");
 let btnReset = document.getElementById("reset");
 
-// btnCalc.disabled = true;
-
-// btnCalc.addEventListener("click", verifica);
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('adultos').addEventListener('input', verificaCampos);
-    document.getElementById('criancas').addEventListener('input', verificaCampos);
-    document.getElementById('horas').addEventListener('input', verificaCampos);
+    adultos.addEventListener('input', verificaCampos);
+    criancas.addEventListener('input', verificaCampos);
+    horas.addEventListener('input', verificaCampos);
   });
 
 function verificaCampos() {
-    // Codigo que será executado
-    if (adultos.value !== "" && criancas.value !== "" && horas.value !== "") {
-        console.log(adultos.value +"tesssss");   
-        console.log(`teste1`);   
+    if (adultos.value !== "" && criancas.value !== "" && horas.value !== "") { 
         btnCalc.disabled = false;
-        // setTimeout(() => {
-            
-            //     alert("Por favor, preencha todos os campos. ")
-            // }, 2500);
         } 
     else {
-            // disabledButton();
         btnCalc.disabled = true;
-        console.log(btnCalc)
-
-            // calcularChurras();
         }
     }
     
     function disabledButton (){
         console.log(`teste`)
-        // btnCalc.disabled = true;
     }
 
     btnCalc.addEventListener("click", calcularChurras)
     
     function calcularChurras( ) {
         reseteD();
-        // reseteD();
-        console.log(`teste03`);   
-        console.log(adultos.value);
-        console.log(criancas.value);
-        console.log(horas.value);
-        console.log(`teste`)
+
         let totalCarne = parseInt(adultos.value) + (parseFloat(criancas.value) * 0.5)
         let adultosBebida = parseInt(adultos.value);
         let criancasBebida = parseInt(criancas.value);
@@ -76,17 +56,10 @@ function calcCarne(e) {
     let horasChurras = parseInt(horas.value);
     if (horasChurras > 6) {
         kgCarne = 0.650;
-        // console.log(horasChurras)
     }
-    // console.log("" + typeof(e))
     let totalCarneE = e * kgCarne;
     let totalCarne = totalCarneE.toFixed(2);
-    // console.log(kgCarne);
-
-    // console.log(totalCarne);
     return totalCarne;
-    
-
 }
 
 function calcCerveja(e) {
@@ -109,14 +82,12 @@ function calcRefri(e) {
     return totalRefri;
 }
 
-btnReset.addEventListener("click", reseteD);
-
 function reseteD() {
     console.log(`oii`)
     document.getElementById("resultadoCarne").innerHTML = "Carne: ";
     document.getElementById("resultadoCerveja").innerHTML = "Ceveja: "
     document.getElementById("resultadoRefri").innerHTML = "Refrigerante: "
-
+    btnCalc.disabled = true;
 }
 
 function reseteInputs() {
