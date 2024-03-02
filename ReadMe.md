@@ -11,11 +11,12 @@ Em construção :construction:# Churrascomêtro
 </p>
 
 <p align="center">	
-  <a href="https://www.linkedin.com/in/karoline-takahagassi-b9ba4b1ab/">
-    <img alt="Willlian Gabriel Passos" src="https://img.shields.io/badge/-KarolineTakahagassi-FFE162?style=flat&logo=Linkedin&logoColor=black" />
+  <a href="https://www.linkedin.com/in/willian.passos/">
+    <img alt="Willlian Gabriel Passos" src="https://img.shields.io/badge/passoswg%40gmail.com-blue?logo=gmail&logoColor=white
+    " />
   </a>
 
-  <a href="mailto:takahagassi.dev@gmail.com">
+  <a href="mailto:passoswg@gmail.com">
     <img alt="Karoline Costa" src="https://img.shields.io/badge/-takahagassi.dev@gmail.com-FFE162?style=flat-square&logo=Gmail&logoColor=black" />
   </a>
 
@@ -60,4 +61,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## :closed_book: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/karoltaka/churrascometro/blob/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/wgPassos/churrascometro/blob/main/LICENSE) para mais detalhes.
