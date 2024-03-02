@@ -12,7 +12,7 @@ Em construção :construction:# Churrascomêtro
 
 <p align="center">	
   <a href="https://www.linkedin.com/in/willian.passos/">
-    <img alt="Willlian Gabriel Passos" src="https://img.shields.io/badge/passoswg%40gmail.com-blue?logo=gmail&logoColor=white
+    <img alt="Willlian Gabriel Passos" src="https://img.shields.io/badge/WillianPassos-blue?logo=linkedin&logoColor=white
     "/>
   </a>
 
