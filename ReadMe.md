@@ -34,7 +34,7 @@ Em construção :construction:# Churrascomêtro
 <p align="center">
   <a href="#clipboard-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#computer-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#closed-book-licença">Licença</a>
+  <a href="#closed_book-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## :clipboard: Sobre o Projeto
@@ -57,6 +57,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - HTML
 - CSS
+- Bootstrap
 - JavaScript
 
 ## :closed_book: Licença
