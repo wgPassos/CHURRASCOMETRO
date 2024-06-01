@@ -3,7 +3,7 @@
 
 Em construção :construction:# Churrascomêtro
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b028544e-52f2-493c-993b-cb6ef56c4949/deploy-status)](https://app.netlify.com/sites/churrascometrowillian/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b028544e-52f2-493c-993b-cb6ef56c4949/deploy-status)](https://churrascometrowillian.netlify.app/)
 
 
 <p align="center">
@@ -17,7 +17,7 @@ Em construção :construction:# Churrascomêtro
   </a>
 
   <a href="mailto:passoswg@gmail.com">
-    <img alt="Karoline Costa" src="https://img.shields.io/badge/passoswg%40gmail.com-blue?logo=gmail&logoColor=white" />
+    <img alt="Willian Passos" src="https://img.shields.io/badge/passoswg%40gmail.com-blue?logo=gmail&logoColor=white" />
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-FFE162">
